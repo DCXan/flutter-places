@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_places/models/place.dart';
 import 'package:flutter_places/providers/places_list_provider.dart';
+import 'package:flutter_places/widgets/image_input.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class NewItemScreen extends ConsumerStatefulWidget {
@@ -51,6 +52,10 @@ class __NewItemState extends ConsumerState<NewItemScreen> {
               style:
                   TextStyle(color: Theme.of(context).colorScheme.onBackground),
             ),
+            const SizedBox(
+              height: 10,
+            ),
+            const ImageInput(),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton.icon(
