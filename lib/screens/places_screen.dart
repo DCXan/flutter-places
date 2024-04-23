@@ -34,7 +34,10 @@ class _PlacesListState extends ConsumerState<PlacesListScreen> {
           ),
         ],
       ),
-      body: PlacesList(places: placesList),
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: PlacesList(places: placesList),
+      ),
     );
   }
 }

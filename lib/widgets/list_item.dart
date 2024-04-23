@@ -18,6 +18,10 @@ class ListItem extends StatelessWidget {
         );
       },
       child: ListTile(
+        leading: CircleAvatar(
+          radius: 26,
+          backgroundImage: FileImage(place.image),
+        ),
         title: Text(
           place.name,
           style: Theme.of(context)
