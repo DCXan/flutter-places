@@ -6,7 +6,8 @@ class PlacesListNotifier extends StateNotifier<List<Place>> {
 
   void addPlace(Place place) {
     if (!state.contains(place)) {
-      state = [place, ...state];
+      final newPlace = Place(name: place.name, image: place.image);
+      state = [newPlace, ...state];
     }
   }
 
