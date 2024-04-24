@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_places/models/place.dart';
 import 'package:flutter_places/providers/places_list_provider.dart';
 import 'package:flutter_places/widgets/image_input.dart';
+import 'package:flutter_places/widgets/location_input.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'dart:io';
 
@@ -63,6 +64,7 @@ class __NewItemState extends ConsumerState<NewItemScreen> {
                 _selectedImage = image;
               },
             ),
+            const LocationInput(),
             Padding(
               padding: const EdgeInsets.all(8.0),
               child: ElevatedButton.icon(
